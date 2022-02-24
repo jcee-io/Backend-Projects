@@ -4,8 +4,47 @@
     <link rel="stylesheet" href="/public/styles.css">
   </head>
   <body>
-    <h1>Express Boilerplate</h1>
-    <p>Make good things happen</p>
+    <h1>Justin's Backend Projects</h1>
+    <div>
+      <h2>Project 1: Timestamp Microservice</h2>
+      <div id="timestamp-info"></div>
+    </div>
+    
+   
+    <div>
+       <h2>Project 2: Request Header Parser</h2>
+       <div id="header-info"></div>
+    </div>
+    <div>
+      <h2>Project 3: URL Shortener</h2>
+      <form action="/api/shorturl" method="POST">
+        Enter URL here: 
+        <input name="url" type="text">
+      </form>
+    </div>
+    <div>
+      <h2>Project 4: Exercise Tracker</h2>
+      <form action="/api/users" method="POST">
+        Create a New User: <br>
+        <input placeholder="username" name="username" type="text"> <br>
+        <input type="submit">
+      </form>
+      <form action="#" method="POST" onsubmit="onExerciseSubmit(event)">
+        Add Exercises: <br>
+        <input placeholder="id" name=":_id" type="text"><br>
+        <input placeholder="description" name="description" type="text"><br>
+        <input placeholder="duration" name="duration" type="text"><br>
+        <input placeholder="date" name="date" type="date"><br>
+        <input type="submit">
+      </form>
+    </div>
+    <div>
+       <h2>Project 5: File Metadata Microservice</h2>
+      <form action="/api/fileanalyse" enctype="multipart/form-data">
+        <input name="upfile" type="file">
+      </form>
+      
+    </div>
     <script src="/scripts/app.js"></script>
   </body>
 </html>
